@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop Share Anywhere — Shop smarter. Share instantly. Predict & win." />
+  <title>Shop Share Anywhere | Shop. Share. Predict. Win.</title>
+  <style>
+    :root{
+      --gold:#f5c800;--gold2:#ffd700;--bg:#000;--panel:rgba(255,255,255,.065);--line:rgba(255,255,255,.12);--muted:rgba(255,255,255,.68)
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#000;color:#fff;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}.display{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.04em}.gold-text{background:linear-gradient(90deg,var(--gold),#fff2a0,var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}.nav{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(0,0,0,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;min-width:0}.logo{width:44px;height:44px;border-radius:18px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;display:grid;place-items:center;font-weight:950;box-shadow:0 0 24px rgba(245,200,0,.25)}.brand-title{font-size:clamp(18px,3vw,31px);font-weight:900;white-space:nowrap}.links{display:flex;align-items:center;gap:26px;font-weight:700;font-size:14px;color:rgba(255,255,255,.82)}.links a:hover{color:var(--gold)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:14px 22px;font-weight:900;cursor:pointer;transition:.2s transform,.2s box-shadow,.2s border-color;background:transparent;color:#fff}.gold-btn{background:linear-gradient(90deg,var(--gold),var(--gold2));color:#000;box-shadow:0 0 0 rgba(245,200,0,0)}.gold-btn:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 0 28px rgba(245,200,0,.46)}.outline-btn{border:1px solid rgba(255,255,255,.28)}.outline-btn:hover{border-color:var(--gold);transform:translateY(-2px)}.hamb{display:none;background:transparent;border:0;color:#fff;font-size:30px}.mobile{display:none;border-top:1px solid var(--line);padding:18px}.mobile.open{display:block}.mobile a{display:block;padding:14px 4px;font-weight:800}.hero{padding:132px 0 68px;background:radial-gradient(circle at 18% 18%,rgba(245,200,0,.2),transparent 32%),radial-gradient(circle at 82% 5%,rgba(255,215,0,.1),transparent 28%),linear-gradient(135deg,#050505,#1a1408 58%,#000)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:42px}.pill{display:inline-flex;align-items:center;gap:10px;padding:9px 15px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--line);font-size:14px;color:rgba(255,255,255,.84)}.dot{width:11px;height:11px;border-radius:999px;background:var(--gold);box-shadow:0 0 0 0 rgba(245,200,0,.8);animation:pulse 1.8s infinite}@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(245,200,0,.7)}70%{box-shadow:0 0 0 12px rgba(245,200,0,0)}100%{box-shadow:0 0 0 0 rgba(245,200,0,0)}}h1{margin:22px 0 0;font-size:clamp(58px,10vw,112px);line-height:.82;font-weight:950}.sub{font-size:clamp(20px,3.2vw,32px);color:rgba(255,255,255,.79);line-height:1.25;margin:26px 0 0;max-width:570px}.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:32px;color:rgba(255,255,255,.58);font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:800}.phone{border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.035));border-radius:42px;padding:18px;box-shadow:0 32px 100px rgba(245,200,0,.12),inset 0 0 0 1px rgba(255,255,255,.04)}.screen{min-height:520px;border-radius:30px;background:#080808;overflow:hidden;border:1px solid rgba(245,200,0,.18);position:relative}.screen:before{content:"";position:absolute;inset:-80px;background:radial-gradient(circle at 50% 0,rgba(245,200,0,.24),transparent 36%);pointer-events:none}.screen-top{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border-bottom:1px solid var(--line);position:relative}.cards{position:relative;padding:18px;display:grid;gap:13px}.mini-card{padding:16px;border-radius:24px;background:var(--panel);border:1px solid var(--line)}.mini-card b{display:block;font-size:17px}.mini-card p{margin:7px 0 0;color:var(--muted);line-height:1.4}.price{font-size:34px;font-weight:950;color:var(--gold);margin-top:8px}.section{padding:76px 0;border-top:1px solid var(--line)}.section-head{text-align:center;max-width:760px;margin:0 auto 42px}.eyebrow{color:var(--gold);font-weight:950;font-size:13px;letter-spacing:.16em;text-transform:uppercase}.section h2{font-size:clamp(38px,6vw,70px);line-height:.94;margin:12px 0 0}.muted{color:var(--muted);line-height:1.65}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{border:1px solid var(--line);background:var(--panel);border-radius:30px;padding:30px;text-align:center}.feature .icon{font-size:52px;margin-bottom:16px}.feature h3{font-size:24px;margin:0 0 8px}.index-card{border-radius:36px;border:1px solid rgba(245,200,0,.28);background:linear-gradient(135deg,rgba(245,200,0,.13),rgba(255,255,255,.055));padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stat{border:1px solid var(--line);background:rgba(0,0,0,.34);border-radius:22px;padding:20px}.stat strong{font-size:28px;color:var(--gold);display:block}.marquee-wrap{background:#080808;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}.marquee{display:flex;width:max-content;gap:34px;white-space:nowrap;padding:15px 0;color:var(--gold);font-weight:900;animation:scroll 32s linear infinite}@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}.quote{max-width:780px;margin:auto;text-align:center;border:1px solid var(--line);background:var(--panel);border-radius:36px;padding:42px}.quote p{font-size:clamp(22px,3vw,34px);font-style:italic;line-height:1.35}.final{text-align:center}.footer{border-top:1px solid var(--line);padding:32px 0;color:rgba(255,255,255,.52)}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.video-card{margin-top:18px;border-radius:26px;overflow:hidden;border:1px solid rgba(245,200,0,.25);background:#000}.demo-video{display:block;width:100%;max-height:72vh;background:#000}.video-section{padding:76px 0;border-top:1px solid var(--line);background:radial-gradient(circle at 50% 0,rgba(245,200,0,.12),transparent 35%)}.video-wrap{max-width:860px;margin:auto;text-align:center}.video-frame{margin-top:28px;border:1px solid rgba(245,200,0,.26);background:rgba(255,255,255,.055);border-radius:34px;padding:16px;box-shadow:0 24px 80px rgba(245,200,0,.10)}.video-frame video{width:100%;border-radius:24px;background:#000;display:block}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:100;align-items:center;justify-content:center;padding:22px}.modal.open{display:flex}.modal-box{width:min(560px,100%);background:#080808;border:1px solid rgba(245,200,0,.35);border-radius:30px;padding:26px;box-shadow:0 0 70px rgba(245,200,0,.18)}.modal-box h3{font-size:30px;margin:0 0 10px}.close{float:right;background:rgba(255,255,255,.08);border:1px solid var(--line);color:#fff;border-radius:999px;width:38px;height:38px;font-size:20px;cursor:pointer}@media(max-width:860px){.links{display:none}.hamb{display:block}.nav-inner{height:72px}.hero-grid,.index-card{grid-template-columns:1fr}.hero{text-align:center}.sub{margin-left:auto;margin-right:auto}.cta-row,.trust{justify-content:center}.phone{max-width:420px;margin:auto}.grid3{grid-template-columns:1fr}.screen{min-height:430px}.footer-inner{justify-content:center;text-align:center}.brand-title{font-size:20px}.download-top{display:none}}@media(max-width:430px){.wrap{width:min(100% - 24px,1180px)}.logo{width:38px;height:38px;border-radius:15px}.hero{padding-top:112px}.btn{width:100%;padding:15px 18px}.cta-row{width:100%}.screen{min-height:400px}h1{font-size:62px}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Shop Share Anywhere home">
+        <div class="logo">SSA</div>
+        <div class="brand-title display">Shop Share <span class="gold-text">Anywhere</span></div>
+      </a>
+      <div class="links">
+        <a href="#features">Features</a><a href="#index">Index Marketplace</a><a href="#demo">Demo Video</a><a href="#ai">AI</a><a href="#download">Get App</a>
+      </div>
+      <a class="btn gold-btn download-top" href="https://play.google.com/store/apps/details?id=com.shopshareanywhere.android.app" target="_blank" rel="noopener">▶ Download</a>
+      <button class="hamb" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+    <div class="wrap mobile" id="mobileMenu">
+      <a href="#features">Features</a><a href="#index">Index Marketplace</a><a href="#demo">Demo Video</a><a href="#ai">AI Power</a><a href="https://play.google.com/store/apps/details?id=com.shopshareanywhere.android.app" target="_blank" rel="noopener">Download on Google Play</a>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="pill"><span class="dot"></span><span id="liveCount">12,458</span> shopping right now</div>
+        <h1 class="display">Shop.<br><span class="gold-text">Share.</span><br>Predict.<br>Win.</h1>
+        <p class="sub">The black and gold super app for shopping, AI discovery, social sharing, crypto, stocks, and trend prediction.</p>
+        <div class="cta-row">
+          <a class="btn gold-btn" href="https://play.google.com/store/apps/details?id=com.shopshareanywhere.android.app" target="_blank" rel="noopener">▶ Get it free on Google Play</a>
+          <button class="btn outline-btn" id="demoBtn">▶ 60-second demo</button>
+        </div>
+        <div class="trust"><span>Privacy-first</span><span>Built in USA</span><span>Grok + AI</span></div>
+      </div>
+      <div class="phone" aria-label="SSA app preview">
+        <div class="screen">
+          <div class="screen-top"><b>SSA</b><span style="color:var(--gold);font-weight:900">LIVE</span></div>
+          <div class="cards">
+            <div class="mini-card"><b>Everything Loop</b><p>Discover products, compare with AI, share instantly, and follow the trend.</p></div>
+            <div class="mini-card"><b>Index Marketplace</b><p>Track the companies, brands, products, and ideas people love.</p><div class="price">+24.8%</div></div>
+            <div class="mini-card"><b>Connected platforms</b><p>Amazon • Walmart • X • Instagram • Coinbase • Robinhood • Kalshi • Grok • ChatGPT</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="section">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Minimal Super App</div><h2 class="display">One tap to everything.</h2></div>
+      <div class="grid3">
+        <div class="feature"><div class="icon">🛒</div><h3>Shop Smarter</h3><p class="muted">Amazon, Walmart, Etsy, Fanatics, Target, Best Buy, and more in one shopping command center.</p></div>
+        <div class="feature"><div class="icon">🔗</div><h3>Share Instantly</h3><p class="muted">Turn products into posts. Share finds to X, Instagram, Facebook, Pinterest, or friends.</p></div>
+        <div class="feature"><div class="icon">📈</div><h3>Predict & Win</h3><p class="muted">Follow trends, markets, and prediction opportunities before the crowd catches on.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-wrap"><div class="marquee" id="marquee"></div></div>
+
+  <section id="demo" class="video-section">
+    <div class="wrap video-wrap">
+      <div class="eyebrow">60 Second Demo</div>
+      <h2 class="display">See SSA in motion.</h2>
+      <p class="muted" style="font-size:20px">Watch the Shop Share Anywhere mobile experience with shopping, sharing, AI discovery, and the black/gold marketplace flow.</p>
+      <div class="video-frame">
+        <video class="demo-video" controls playsinline preload="metadata" poster="" aria-label="Shop Share Anywhere 60 second demo video">
+          <source src="ssa-demo-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section id="index" class="section">
+    <div class="wrap index-card">
+      <div><div class="eyebrow">SSA Index Marketplace</div><h2 class="display">Invest in what people love.</h2><p class="muted">A future-facing marketplace concept where shopping, brand discovery, social momentum, and market intelligence come together in one black/gold dashboard.</p></div>
+      <div class="stat-grid">
+        <div class="stat"><strong>AI</strong><span>Deal research</span></div><div class="stat"><strong>Social</strong><span>Trend sharing</span></div><div class="stat"><strong>Crypto</strong><span>Base-ready wallet layer</span></div><div class="stat"><strong>Stocks</strong><span>Company discovery</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai" class="section">
+    <div class="wrap quote"><div class="eyebrow">Powered by Grok + AI</div><p>“Found it, compared it, shared it, and predicted the trend — all in one app. This is the future.”</p><div class="muted">— Jacob Thomas Wieck, creator</div></div>
+  </section>
+
+  <section id="download" class="section final">
+    <div class="wrap"><h2 class="display">Ready to go?</h2><p class="muted" style="font-size:20px">Download Shop Share Anywhere now — free on Android.</p><a class="btn gold-btn" href="https://play.google.com/store/apps/details?id=com.shopshareanywhere.android.app" target="_blank" rel="noopener">▶ Download SSA</a></div>
+  </section>
+
+  <footer class="footer"><div class="wrap footer-inner"><div class="brand"><div class="logo" style="width:34px;height:34px;border-radius:14px">SSA</div><b>Shop Share Anywhere</b></div><div>Built by <a style="color:var(--gold)" href="https://x.com/roll_1up" target="_blank" rel="noopener">@roll_1up • Jacob Thomas Wieck</a></div><div>© 2026 • Minimal • Dynamic • Yours</div></div></footer>
+
+  <div class="modal" id="demoModal"><div class="modal-box"><button class="close" id="closeModal">×</button><h3 class="display gold-text">SSA 60-Second Demo</h3><p class="muted">Watch the Shop Share Anywhere demo directly on the page.</p><div class="video-card"><video class="demo-video" controls playsinline preload="metadata"><source src="ssa-demo-video.mp4" type="video/mp4">Your browser does not support the video tag.</video></div><div class="mini-card"><b>Flow:</b><p>Open SSA → find a product → compare with AI → share to social → follow the trend → predict what wins next.</p></div></div></div>
+
+  <script>
+    (function(){
+      var count=12458, live=document.getElementById('liveCount'), menu=document.getElementById('mobileMenu'), menuBtn=document.getElementById('menuBtn'), modal=document.getElementById('demoModal');
+      function update(){count += Math.floor(Math.random()*7)+3; if(live) live.textContent=count.toLocaleString('en-US');}
+      setInterval(update,2800);
+      var items=['🔥 Viral wireless earbuds dropping 38% today','📸 iPhone cases trending on Etsy','🚀 Tesla Cybertruck accessories trending','👟 New Jordan drop — share your find','💰 Gold prediction market live','☕ Starbucks secret menu going viral','🏀 Fanatics jerseys moving fast','🤖 AI shopping assistant active'];
+      var marquee=document.getElementById('marquee');
+      if(marquee){var html='';items.concat(items).forEach(function(i){html+='<span>'+i+'</span>';});marquee.innerHTML=html;}
+      if(menuBtn){menuBtn.addEventListener('click',function(){menu.classList.toggle('open');menuBtn.textContent=menu.classList.contains('open')?'×':'☰';});}
+      Array.prototype.forEach.call(document.querySelectorAll('#mobileMenu a'),function(a){a.addEventListener('click',function(){menu.classList.remove('open');menuBtn.textContent='☰';});});
+      document.getElementById('demoBtn').addEventListener('click',function(){modal.classList.add('open');});
+      function closeDemo(){modal.classList.remove('open'); Array.prototype.forEach.call(modal.querySelectorAll('video'),function(v){v.pause();});}
+      document.getElementById('closeModal').addEventListener('click',closeDemo);
+      modal.addEventListener('click',function(e){if(e.target===modal)closeDemo();});
+    })();
+  </script>
+</body>
+</html>
