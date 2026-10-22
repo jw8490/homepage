@@ -22,13 +22,13 @@
         <div class="brand-title display">Shop Share <span class="gold-text">Anywhere</span></div>
       </a>
       <div class="links">
-        <a href="#features">Features</a><a href="#index">Index Marketplace</a><a href="#demo">Demo Video</a><a href="#ai">AI</a><a href="#download">Get App</a>
+        <a href="#features">Features</a><a href="#index">Index Marketplace</a><a href="#ai">AI</a><a href="#download">Get App</a>
       </div>
       <a class="btn gold-btn download-top" href="https://play.google.com/store/apps/details?id=com.shopshareanywhere.android.app" target="_blank" rel="noopener">▶ Download</a>
       <button class="hamb" id="menuBtn" aria-label="Open menu">☰</button>
     </div>
     <div class="wrap mobile" id="mobileMenu">
-      <a href="#features">Features</a><a href="#index">Index Marketplace</a><a href="#demo">Demo Video</a><a href="#ai">AI Power</a><a href="https://play.google.com/store/apps/details?id=com.shopshareanywhere.android.app" target="_blank" rel="noopener">Download on Google Play</a>
+      <a href="#features">Features</a><a href="#index">Index Marketplace</a><a href="#ai">AI Power</a><a href="https://play.google.com/store/apps/details?id=com.shopshareanywhere.android.app" target="_blank" rel="noopener">Download on Google Play</a>
     </div>
   </nav>
 
@@ -40,7 +40,6 @@
         <p class="sub">The black and gold super app for shopping, AI discovery, social sharing, crypto, stocks, and trend prediction.</p>
         <div class="cta-row">
           <a class="btn gold-btn" href="https://play.google.com/store/apps/details?id=com.shopshareanywhere.android.app" target="_blank" rel="noopener">▶ Get it free on Google Play</a>
-          <button class="btn outline-btn" id="demoBtn">▶ 60-second demo</button>
         </div>
         <div class="trust"><span>Privacy-first</span><span>Built in USA</span><span>Grok + AI</span></div>
       </div>
@@ -70,20 +69,6 @@
 
   <div class="marquee-wrap"><div class="marquee" id="marquee"></div></div>
 
-  <section id="demo" class="video-section">
-    <div class="wrap video-wrap">
-      <div class="eyebrow">60 Second Demo</div>
-      <h2 class="display">See SSA in motion.</h2>
-      <p class="muted" style="font-size:20px">Watch the Shop Share Anywhere mobile experience with shopping, sharing, AI discovery, and the black/gold marketplace flow.</p>
-      <div class="video-frame">
-        <video class="demo-video" controls playsinline preload="none" poster="ssa-demo-poster.jpg" aria-label="Shop Share Anywhere 60 second demo video">
-          <source src="ssa-demo-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </section>
-
   <section id="index" class="section">
     <div class="wrap index-card">
       <div><div class="eyebrow">SSA Index Marketplace</div><h2 class="display">Invest in what people love.</h2><p class="muted">A future-facing marketplace concept where shopping, brand discovery, social momentum, and market intelligence come together in one black/gold dashboard.</p></div>
@@ -103,11 +88,9 @@
 
   <footer class="footer"><div class="wrap footer-inner"><div class="brand"><div class="logo" style="width:34px;height:34px;border-radius:14px">SSA</div><b>Shop Share Anywhere</b></div><div>Built by <a style="color:var(--gold)" href="https://x.com/roll_1up" target="_blank" rel="noopener">@roll_1up • Jacob Thomas Wieck</a></div><div>© 2026 • Minimal • Dynamic • Yours</div></div></footer>
 
-  <div class="modal" id="demoModal"><div class="modal-box"><button class="close" id="closeModal">×</button><h3 class="display gold-text">SSA 60-Second Demo</h3><p class="muted">Watch the Shop Share Anywhere demo directly on the page.</p><div class="video-card"><video class="demo-video" controls playsinline preload="none" poster="ssa-demo-poster.jpg"><source src="ssa-demo-video.mp4" type="video/mp4">Your browser does not support the video tag.</video></div><div class="mini-card"><b>Flow:</b><p>Open SSA → find a product → compare with AI → share to social → follow the trend → predict what wins next.</p></div></div></div>
-
   <script>
     (function(){
-      var count=12458, live=document.getElementById('liveCount'), menu=document.getElementById('mobileMenu'), menuBtn=document.getElementById('menuBtn'), modal=document.getElementById('demoModal');
+      var count=12458, live=document.getElementById('liveCount'), menu=document.getElementById('mobileMenu'), menuBtn=document.getElementById('menuBtn');
       function update(){count += Math.floor(Math.random()*7)+3; if(live) live.textContent=count.toLocaleString('en-US');}
       setInterval(update,2800);
       var items=['🔥 Viral wireless earbuds dropping 38% today','📸 iPhone cases trending on Etsy','🚀 Tesla Cybertruck accessories trending','👟 New Jordan drop — share your find','💰 Gold prediction market live','☕ Starbucks secret menu going viral','🏀 Fanatics jerseys moving fast','🤖 AI shopping assistant active'];
@@ -115,10 +98,6 @@
       if(marquee){var html='';items.concat(items).forEach(function(i){html+='<span>'+i+'</span>';});marquee.innerHTML=html;}
       if(menuBtn){menuBtn.addEventListener('click',function(){menu.classList.toggle('open');menuBtn.textContent=menu.classList.contains('open')?'×':'☰';});}
       Array.prototype.forEach.call(document.querySelectorAll('#mobileMenu a'),function(a){a.addEventListener('click',function(){menu.classList.remove('open');menuBtn.textContent='☰';});});
-      document.getElementById('demoBtn').addEventListener('click',function(){modal.classList.add('open');});
-      function closeDemo(){modal.classList.remove('open'); Array.prototype.forEach.call(modal.querySelectorAll('video'),function(v){v.pause();});}
-      document.getElementById('closeModal').addEventListener('click',closeDemo);
-      modal.addEventListener('click',function(e){if(e.target===modal)closeDemo();});
     })();
   </script>
 </body>
